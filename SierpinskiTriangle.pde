@@ -10,7 +10,7 @@ public void setup()
 
 public void draw()
 {
-  clear(); 
+  //clear(); 
   background(0,0,0);
   maxRecursionDepth = 0;
   sierpinski (20,760,initialTriangleSize, 0);
