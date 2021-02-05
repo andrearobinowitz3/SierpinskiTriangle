@@ -10,7 +10,7 @@ public void setup()
 
 public void draw()
 {
-  
+  clear(); 
   background(0,0,0);
   maxRecursionDepth = 0;
   sierpinski (20,760,initialTriangleSize, 0);
@@ -45,7 +45,7 @@ public void sierpinski(int x, int y, int len, int recursionDepth)
     maxRecursionDepth = recursionDepth;
   }
   if (len < lengthMin) {
-    triangle(x, y, x+len, y, x+(len/2),y-len);
+    triangle((float)(x), (float)(y), (float)(x+len), (float)(y), (float)(x+(len/2)),(float)(y-len));
   }
   else
   {
