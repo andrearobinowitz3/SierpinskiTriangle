@@ -21,10 +21,6 @@ public void draw()
 
 public void mouseClicked ()//optional
 {
-  //lengthMin = lengthMin + 5;
-  //if (xDistortion > 100) {
-  //  xDistortion = 0;
-  //}
   if (mouseX < 400) {
     lengthMin = lengthMin / 2;
   }
@@ -43,10 +39,6 @@ public void mouseClicked ()//optional
 
 public void sierpinski(int x, int y, int len, int recursionDepth) 
 {
-
-  //if (recursionDepth > 1000) {
-  //  return;
-  //}
   
   if (recursionDepth > maxRecursionDepth) {
     maxRecursionDepth = recursionDepth;
